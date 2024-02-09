@@ -20,10 +20,10 @@ class Menu:
         ]
 
     def get_items(self):
-        """Returns all the names of the available menu items"""
-        options = ""
+        """Returns the list of the names for the available menu items"""
+        options = []
         for item in self.menu:
-            options += f"{item.name}/"
+            options.append(item.name)
         return options
 
     def find_drink(self, order_name):
